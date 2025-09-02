@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page - Becv</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="resources/Logo.svg" alt="Becv Logo" />
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <h1>Interested in our business pricing?</h1>
+          <p class="subtitle">
+            Fill out the form to view details and we'll contact you as soon as
+            possible.
+          </p>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ethan Johnson"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Company Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ethan@johnson.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company-size">Company Size</label>
+                <div class="select-wrapper">
+                  <select id="company-size" name="company-size" required>
+                    <option value="">50-100 employees</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-100">51-100 employees</option>
+                    <option value="101-500">101-500 employees</option>
+                    <option value="500+">500+ employees</option>
+                  </select>
+                  <img
+                    src="resources/Expand_down.svg"
+                    alt="Expand"
+                    class="select-arrow"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="select-wrapper">
+                  <select id="subject" name="subject" required>
+                    <option value="">Building Landing pages</option>
+                    <option value="pricing">Pricing Information</option>
+                    <option value="demo">Request Demo</option>
+                    <option value="support">Technical Support</option>
+                    <option value="partnership">Partnership</option>
+                  </select>
+                  <img
+                    src="resources/Expand_down.svg"
+                    alt="Expand"
+                    class="select-arrow"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="50-100 employees"
+                rows="6"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Contact Sales</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
