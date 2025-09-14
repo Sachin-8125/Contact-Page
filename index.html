@@ -3,102 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page - Becv</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Contact Page | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="resources/Logo.svg" alt="Becv Logo" />
+
+
+    <main class="main-bg">
+      <div class="logo-row">
+        <img src="resources/Logo.svg" alt="Logo" class="logo" />
+        <span class="logo-text"></span>
       </div>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="content">
-          <h1>Interested in our business pricing?</h1>
-          <p class="subtitle">
-            Fill out the form to view details and we'll contact you as soon as
-            possible.
-          </p>
-
-          <form class="contact-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Ethan Johnson"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Company Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="ethan@johnson.com"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="company-size">Company Size</label>
-                <div class="select-wrapper">
-                  <select id="company-size" name="company-size" required>
-                    <option value="">50-100 employees</option>
-                    <option value="1-10">1-10 employees</option>
-                    <option value="11-50">11-50 employees</option>
-                    <option value="51-100">51-100 employees</option>
-                    <option value="101-500">101-500 employees</option>
-                    <option value="500+">500+ employees</option>
-                  </select>
-                  <img
-                    src="resources/Expand_down.svg"
-                    alt="Expand"
-                    class="select-arrow"
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <div class="select-wrapper">
-                  <select id="subject" name="subject" required>
-                    <option value="">Building Landing pages</option>
-                    <option value="pricing">Pricing Information</option>
-                    <option value="demo">Request Demo</option>
-                    <option value="support">Technical Support</option>
-                    <option value="partnership">Partnership</option>
-                  </select>
-                  <img
-                    src="resources/Expand_down.svg"
-                    alt="Expand"
-                    class="select-arrow"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group full-width">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="50-100 employees"
-                rows="6"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Contact Sales</button>
-          </form>
-        </div>
+      <div class="main-headings">
+        <h1 class="main-title">Interested in our<br>business pricing?</h1>
+        <p class="main-subtitle">Fill out the form to view details and we'll<br>contact you as soon as possible.</p>
       </div>
+      <section class="contact-card">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Ethan Johnson" />
+            </div>
+            <div class="form-group">
+              <label for="email">Company Email</label>
+              <input type="email" id="email" name="email" placeholder="ethan@johnson.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company-size">Company Size</label>
+              <select id="company-size" name="company-size">
+                <option selected>50-100 employees</option>
+                <option>10-50 employees</option>
+                <option>100-500 employees</option>
+                <option>500+ employees</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Building Landing pages" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="50-100 employees"></textarea>
+          </div>
+          <button type="submit">Contact Sales</button>
+        </form>
+      </section>
     </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Sachin Kumar</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+    </div>
+      
   </body>
 </html>
